@@ -7,6 +7,7 @@ TagManager:
   - SpeedUp
   - DamageUp
   - HealthUp
+  - Enemy
   layers:
   - Default
   - TransparentFX
