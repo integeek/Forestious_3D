@@ -12,10 +12,14 @@ public class WeaponStats : MonoBehaviour
         // Vérifier si l'objet touché a le tag "Enemy"
         if(other.gameObject.CompareTag("Enemy"))
         {
+            // Obtenir le composant Enemy de l'objet touché
             Enemy enemyComponent = other.gameObject.GetComponent<Enemy>();
+
+            // Vérifier si le composant Enemy existe
             if(enemyComponent != null)
             {
-                enemyComponent.TakeDamage(1);
+                // Infliger des dégâts à l'ennemi en utilisant la variable damage
+                enemyComponent.TakeDamage(damage);
             }
         }
     }
