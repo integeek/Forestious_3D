@@ -1049,6 +1049,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3140618711990475969, guid: 98432c86c01bdc644a04bad0312d98ba, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465219188101793436, guid: 98432c86c01bdc644a04bad0312d98ba, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8815877169422978032, guid: 98432c86c01bdc644a04bad0312d98ba, type: 3}
       propertyPath: enemyScript
       value: 
