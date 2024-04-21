@@ -16,7 +16,10 @@ public class Movement : MonoBehaviour
     void Update()
     {
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        characterController.Move(move * Time.deltaTime * characterStats.moveSpeed);
+        //characterController.Move(move * Time.deltaTime * characterStats.moveSpeed);
+
+        // Déplacer le personnage en utilisant SimpleMove
+        characterController.SimpleMove(move * characterStats.moveSpeed);
 
         // Check if there is movement (magnitude of move vector is not zero)
         if (move.magnitude > 0)
