@@ -4,7 +4,7 @@ public class PowerUpManager : MonoBehaviour
 {
     public CharacterStats characterStats;
     public WeaponStats weaponStats;
-    public float bonusSpeed = 15f;
+    public float bonusSpeed = 5f;
     public float bonusDamage = 5f;
     public float bonusHealth = 1f;
 
