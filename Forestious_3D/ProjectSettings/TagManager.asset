@@ -8,6 +8,8 @@ TagManager:
   - DamageUp
   - HealthUp
   - Enemy
+  - Ground
+  - Door
   layers:
   - Default
   - TransparentFX
