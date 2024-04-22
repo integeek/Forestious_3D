@@ -9,6 +9,10 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
+    }
+
+    public void SpawnEnemies()
+    {
         int numEnemies = Random.Range(minEnemies, maxEnemies + 1);
 
         for (int i = 0; i < numEnemies; i++)

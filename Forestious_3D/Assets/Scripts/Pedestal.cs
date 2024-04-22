@@ -19,6 +19,7 @@ public class Pedestal : MonoBehaviour
                 sword.SetActive(true);
                 Destroy(door);
                 hexagone1.SetActive(true);
+
             }
             else if (gameObject.CompareTag("PDA"))
             {
@@ -27,6 +28,7 @@ public class Pedestal : MonoBehaviour
                 axe.SetActive(true);
                 Destroy(door);
                 hexagone1.SetActive(true);
+
             }
         }
     }
