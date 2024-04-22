@@ -10,6 +10,8 @@ TagManager:
   - Enemy
   - Ground
   - Door
+  - PDS
+  - PDA
   layers:
   - Default
   - TransparentFX
