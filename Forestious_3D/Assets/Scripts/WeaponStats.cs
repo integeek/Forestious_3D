@@ -5,7 +5,7 @@ public class WeaponStats : MonoBehaviour
     public float damage = 5;
     public float attackSpeed = 5;
     public float range = 5;
-    public Enemy enemyScript; // Déclarer une variable publique de type Enemy
+    public Enemy enemyScript;
 
     void OnTriggerEnter(Collider other)
     {
