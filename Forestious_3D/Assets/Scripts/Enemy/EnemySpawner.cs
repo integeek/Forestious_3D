@@ -5,7 +5,9 @@ public class EnemySpawner : MonoBehaviour
     public GameObject enemyPrefab; 
     public int minEnemies = 2;
     public int maxEnemies = 4;
+    public float spawnRadius = 5f; // Rayon autour du point central pour le spawn des ennemis
     public LayerMask groundLayer;
+    public GameObject centerObject; // GameObject au milieu de l'hexagone
 
     void Start()
     {
@@ -25,18 +27,18 @@ public class EnemySpawner : MonoBehaviour
 
     Vector3 GenerateSpawnPosition()
     {
-        Vector3 spawnPosition = Vector3.zero;
-        bool foundValidPosition = false;
+        // Obtenez la position du GameObject au milieu de l'hexagone
+        Vector3 centerPosition = centerObject.transform.position;
 
-        while (!foundValidPosition)
+        // Générez une position aléatoire dans un rayon autour du point central
+        Vector2 randomPoint = Random.insideUnitCircle * spawnRadius;
+        Vector3 spawnPosition = new Vector3(randomPoint.x, 1.755f, randomPoint.y) + centerPosition;
+
+        // Effectuez un raycast vers le bas pour s'assurer que la position de spawn est sur le sol
+        RaycastHit hit;
+        if (Physics.Raycast(spawnPosition, Vector3.down, out hit, Mathf.Infinity, groundLayer))
         {
-            spawnPosition = new Vector3(Random.Range(-10f, 10f), 1.755f, Random.Range(-10f, 10f));
-
-            RaycastHit hit;
-            if (Physics.Raycast(spawnPosition, Vector3.down, out hit, Mathf.Infinity, groundLayer))
-            {
-                foundValidPosition = true;
-            }
+            spawnPosition = hit.point;
         }
 
         return spawnPosition;
