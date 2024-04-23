@@ -4,19 +4,20 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] float health, maxHealth = 20f;
     [SerializeField] private Healthbar _healthbar;
-    private static int activeEnemies = 0; // Variable statique pour compter les ennemis actifs
+    private static int activeEnemies = 0;
+    public float damageAmount = 10f;
 
     void Start()
     {
        health = maxHealth;
        _healthbar.updateHealthBar(maxHealth, health);
-       activeEnemies++; // Incrémente le compteur d'ennemis actifs lorsque cet ennemi est créé
+       activeEnemies++;
     }
 
     private void OnDestroy()
     {
-        activeEnemies--; // Décrémente le compteur d'ennemis actifs lorsque cet ennemi est détruit
-        CheckEnemiesRemaining(); // Vérifie s'il reste d'autres ennemis dans la salle
+        activeEnemies--;
+        CheckEnemiesRemaining();
     }
 
     public void TakeDamage(float damageAmount)
@@ -34,19 +35,29 @@ public class Enemy : MonoBehaviour
     {
         if (activeEnemies <= 0)
         {
-            // Si aucun ennemi actif n'est présent, détruisez la porte
             DestroyDoor();
         }
     }
 
     private void DestroyDoor()
     {
-        // Code pour détruire la porte
-        // Par exemple :
         GameObject door = GameObject.FindGameObjectWithTag("Door");
         if (door != null)
         {
             Destroy(door);
         }
     }
+
+private void OnTriggerEnter(Collider other)
+{
+    if (other.CompareTag("Player")) // Vérifie si le joueur entre en collision avec l'ennemi
+    {
+        CharacterStats playerStats = other.GetComponent<CharacterStats>();
+        if (playerStats != null) // Correction de la comparaison
+        {
+            playerStats.TakeDamage(damageAmount); // Inflige des dégâts au joueur
+        }
+    }
+}
+
 }

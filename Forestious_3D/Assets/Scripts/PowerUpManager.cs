@@ -21,10 +21,6 @@ public class PowerUpManager : MonoBehaviour
             {
                 weaponStats.damage += bonusDamage; // Augmente les dégâts de l'arme du joueur
             }
-            else if (gameObject.CompareTag("HealthUp")) // Si le power-up a le tag "HealthUp"
-            {
-                characterStats.health += bonusHealth; // Augmente la santé du joueur
-            }
 
             Destroy(gameObject); // Détruit le power-up une fois qu'il a été récupéré par le joueur
         }
