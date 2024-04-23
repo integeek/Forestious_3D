@@ -1,22 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-public class EnnemyFollow : MonoBehaviour
+public class EnemyFollow : MonoBehaviour
 {
     public float speed = 2.0f;
-    public Transform Player;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, Player.position, speed * Time.deltaTime);
+        // Recherchez dynamiquement l'objet avec le tag "Player"
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+
+        if (player != null)
+        {
+            // Déplacez l'ennemi vers la position du joueur
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+        }
+        else
+        {
+            Debug.LogWarning("Aucun objet avec le tag 'Player' n'a été trouvé.");
+        }
     }
 }
