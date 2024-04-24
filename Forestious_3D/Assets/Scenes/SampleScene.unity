@@ -303,6 +303,7 @@ GameObject:
   - component: {fileID: 12618403}
   - component: {fileID: 12618402}
   - component: {fileID: 12618401}
+  - component: {fileID: 12618404}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -319,7 +320,7 @@ Transform:
   m_GameObject: {fileID: 12618399}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.4930311, z: -0, w: 0.8700117}
-  m_LocalPosition: {x: -0.36727372, y: 0.51, z: -0.6053553}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -340,6 +341,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 999872887}
   centreObject: {fileID: 1914100084}
+  trees: []
   doors:
   - {fileID: 2121133185}
   - {fileID: 676853234}
@@ -389,10 +391,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.5698969, y: 3.9029582, z: 1.1188134}
   m_Center: {x: 0.7131656, y: 1.4514791, z: -0.059410255}
+--- !u!135 &12618404
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12618399}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &14570960
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +428,7 @@ GameObject:
   - component: {fileID: 14570962}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -629,7 +652,7 @@ GameObject:
   - component: {fileID: 19009689}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1603,7 +1626,7 @@ GameObject:
   - component: {fileID: 67674040}
   m_Layer: 0
   m_Name: foret 4
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1743,7 +1766,7 @@ GameObject:
   - component: {fileID: 70417727}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3171,7 +3194,7 @@ GameObject:
   - component: {fileID: 140808428}
   m_Layer: 0
   m_Name: foret 4
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3227,6 +3250,7 @@ GameObject:
   - component: {fileID: 144394402}
   - component: {fileID: 144394401}
   - component: {fileID: 144394400}
+  - component: {fileID: 144394403}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -3243,7 +3267,7 @@ Transform:
   m_GameObject: {fileID: 144394398}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3264,6 +3288,13 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 602149233}
   centreObject: {fileID: 1940576609}
+  trees:
+  - {fileID: 1076362255}
+  - {fileID: 2018816346}
+  - {fileID: 1817947138}
+  - {fileID: 317682129}
+  - {fileID: 378922273}
+  - {fileID: 843793889}
   doors:
   - {fileID: 1076362255}
   - {fileID: 2018816346}
@@ -3315,10 +3346,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &144394403
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144394398}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &149883584
 GameObject:
   m_ObjectHideFlags: 0
@@ -4983,7 +5035,7 @@ GameObject:
   - component: {fileID: 227067946}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5207,7 +5259,7 @@ GameObject:
   - component: {fileID: 233774868}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5870,7 +5922,7 @@ GameObject:
   - component: {fileID: 262067819}
   m_Layer: 0
   m_Name: foret 5
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6333,7 +6385,7 @@ GameObject:
   - component: {fileID: 311114547}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7341,6 +7393,7 @@ GameObject:
   - component: {fileID: 364963627}
   - component: {fileID: 364963626}
   - component: {fileID: 364963625}
+  - component: {fileID: 364963628}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -7357,7 +7410,7 @@ Transform:
   m_GameObject: {fileID: 364963623}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7378,6 +7431,13 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 381839604}
   centreObject: {fileID: 620995356}
+  trees:
+  - {fileID: 227067944}
+  - {fileID: 1297894912}
+  - {fileID: 233774866}
+  - {fileID: 1437650075}
+  - {fileID: 51929406}
+  - {fileID: 2102420598}
   doors:
   - {fileID: 227067944}
   - {fileID: 1297894912}
@@ -7429,10 +7489,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &364963628
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364963623}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &365213005
 GameObject:
   m_ObjectHideFlags: 0
@@ -7868,6 +7949,7 @@ GameObject:
   - component: {fileID: 385605419}
   - component: {fileID: 385605418}
   - component: {fileID: 385605417}
+  - component: {fileID: 385605420}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -7884,7 +7966,7 @@ Transform:
   m_GameObject: {fileID: 385605415}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7905,6 +7987,13 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 999985255}
   centreObject: {fileID: 1259699644}
+  trees:
+  - {fileID: 703197495}
+  - {fileID: 785768535}
+  - {fileID: 544112511}
+  - {fileID: 1112413928}
+  - {fileID: 1684093535}
+  - {fileID: 922665105}
   doors:
   - {fileID: 703197495}
   - {fileID: 785768535}
@@ -7956,10 +8045,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &385605420
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385605415}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.58201027
+  m_Center: {x: -0.004935455, y: 0, z: 0.01639757}
 --- !u!1 &402967997
 GameObject:
   m_ObjectHideFlags: 0
@@ -8255,7 +8365,7 @@ GameObject:
   - component: {fileID: 423433071}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8395,6 +8505,7 @@ GameObject:
   - component: {fileID: 428998749}
   - component: {fileID: 428998748}
   - component: {fileID: 428998747}
+  - component: {fileID: 428998750}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -8411,7 +8522,7 @@ Transform:
   m_GameObject: {fileID: 428998745}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8432,6 +8543,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 2115847726}
   centreObject: {fileID: 1993167647}
+  trees: []
   doors:
   - {fileID: 311114545}
   - {fileID: 1842774810}
@@ -8481,10 +8593,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &428998750
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428998745}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.58731306
+  m_Center: {x: -0.08731317, y: 0, z: 1.2542423e-10}
 --- !u!1 &431924856
 GameObject:
   m_ObjectHideFlags: 0
@@ -8548,7 +8681,7 @@ GameObject:
   - component: {fileID: 437642438}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8660,7 +8793,7 @@ GameObject:
   - component: {fileID: 440277096}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9108,6 +9241,7 @@ GameObject:
   - component: {fileID: 471733402}
   - component: {fileID: 471733401}
   - component: {fileID: 471733400}
+  - component: {fileID: 471733403}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -9124,7 +9258,7 @@ Transform:
   m_GameObject: {fileID: 471733398}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.4930311, z: -0, w: 0.8700117}
-  m_LocalPosition: {x: -0.36727372, y: 0.51, z: -0.6053553}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9145,6 +9279,13 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1412804597}
   centreObject: {fileID: 416980506}
+  trees:
+  - {fileID: 1017466760}
+  - {fileID: 1527083173}
+  - {fileID: 500804963}
+  - {fileID: 1555863212}
+  - {fileID: 463029061}
+  - {fileID: 1548189435}
   doors:
   - {fileID: 1017466760}
   - {fileID: 1527083173}
@@ -9196,10 +9337,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.5698969, y: 3.9029582, z: 1.1188134}
   m_Center: {x: 0.7131656, y: 1.4514791, z: -0.059410255}
+--- !u!135 &471733403
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471733398}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &471751786
 GameObject:
   m_ObjectHideFlags: 0
@@ -9380,7 +9542,7 @@ GameObject:
   - component: {fileID: 479369114}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9828,6 +9990,7 @@ GameObject:
   - component: {fileID: 499532700}
   - component: {fileID: 499532699}
   - component: {fileID: 499532698}
+  - component: {fileID: 499532701}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -9844,7 +10007,7 @@ Transform:
   m_GameObject: {fileID: 499532696}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9865,6 +10028,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1955811609}
   centreObject: {fileID: 1982158076}
+  trees: []
   doors:
   - {fileID: 1361560620}
   - {fileID: 2047562829}
@@ -9913,10 +10077,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &499532701
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499532696}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.6265219
+  m_Center: {x: -0.039208695, y: 0, z: 2.914124e-10}
 --- !u!1 &500804963
 GameObject:
   m_ObjectHideFlags: 0
@@ -9929,7 +10114,7 @@ GameObject:
   - component: {fileID: 500804965}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10865,7 +11050,7 @@ GameObject:
   - component: {fileID: 544112513}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11005,7 +11190,7 @@ GameObject:
   - component: {fileID: 548702316}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12644,7 +12829,7 @@ GameObject:
   - component: {fileID: 642063736}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12784,7 +12969,7 @@ GameObject:
   - component: {fileID: 656293819}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13260,6 +13445,7 @@ GameObject:
   - component: {fileID: 670739362}
   - component: {fileID: 670739361}
   - component: {fileID: 670739360}
+  - component: {fileID: 670739363}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -13276,7 +13462,7 @@ Transform:
   m_GameObject: {fileID: 670739358}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13297,6 +13483,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 694111058}
   centreObject: {fileID: 2021192154}
+  trees: []
   doors:
   - {fileID: 1080241668}
   - {fileID: 736383031}
@@ -13345,10 +13532,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &670739363
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670739358}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &672497207
 GameObject:
   m_ObjectHideFlags: 0
@@ -13529,7 +13737,7 @@ GameObject:
   - component: {fileID: 676853236}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14489,7 +14697,7 @@ GameObject:
   - component: {fileID: 702611300}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14629,7 +14837,7 @@ GameObject:
   - component: {fileID: 703197497}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15341,7 +15549,7 @@ GameObject:
   - component: {fileID: 736383033}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16884,6 +17092,7 @@ GameObject:
   - component: {fileID: 795117365}
   - component: {fileID: 795117364}
   - component: {fileID: 795117363}
+  - component: {fileID: 795117366}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -16900,7 +17109,7 @@ Transform:
   m_GameObject: {fileID: 795117361}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.4930311, z: -0, w: 0.8700117}
-  m_LocalPosition: {x: -0.36727372, y: 0.51, z: -0.6053553}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16921,6 +17130,13 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1982921856}
   centreObject: {fileID: 1507348881}
+  trees:
+  - {fileID: 1223805651}
+  - {fileID: 819246013}
+  - {fileID: 1021313589}
+  - {fileID: 1948559533}
+  - {fileID: 1879629841}
+  - {fileID: 158381972}
   doors:
   - {fileID: 1223805651}
   - {fileID: 819246013}
@@ -16972,10 +17188,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.5698969, y: 3.9029582, z: 1.1188134}
   m_Center: {x: 0.7131656, y: 1.4514791, z: -0.059410255}
+--- !u!135 &795117366
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795117361}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &803242743
 GameObject:
   m_ObjectHideFlags: 0
@@ -17464,7 +17701,7 @@ GameObject:
   - component: {fileID: 822214947}
   m_Layer: 0
   m_Name: foret 5
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19412,7 +19649,7 @@ GameObject:
   - component: {fileID: 950952331}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20109,7 +20346,7 @@ GameObject:
   - component: {fileID: 999985258}
   - component: {fileID: 999985257}
   - component: {fileID: 999985255}
-  - component: {fileID: 999985256}
+  - component: {fileID: 999985260}
   m_Layer: 8
   m_Name: Hex13
   m_TagString: Ground
@@ -20160,27 +20397,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   centerObject: {fileID: 1259699644}
---- !u!65 &999985256
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999985253}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.73205, y: 8.11, z: 2}
-  m_Center: {x: 0, y: 0.099999994, z: 0}
 --- !u!64 &999985257
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20200,7 +20416,7 @@ MeshCollider:
   m_ProvidesContacts: 1
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2794067383335433913, guid: 8d31bf586d4e35043ad2a68272600cac, type: 3}
 --- !u!23 &999985258
@@ -20253,6 +20469,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 999985253}
   m_Mesh: {fileID: -2794067383335433913, guid: 8d31bf586d4e35043ad2a68272600cac, type: 3}
+--- !u!135 &999985260
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999985253}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.63511854
+  m_Center: {x: -0.021618605, y: 0, z: -0.03275719}
 --- !u!1 &1000308053
 GameObject:
   m_ObjectHideFlags: 0
@@ -20639,7 +20876,7 @@ GameObject:
   - component: {fileID: 1017466762}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20779,7 +21016,7 @@ GameObject:
   - component: {fileID: 1021313591}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22104,7 +22341,7 @@ GameObject:
   - component: {fileID: 1076362257}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22899,7 +23136,7 @@ GameObject:
   - component: {fileID: 1104489639}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22955,7 +23192,7 @@ GameObject:
   - component: {fileID: 1105130849}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23263,7 +23500,7 @@ GameObject:
   - component: {fileID: 1112413930}
   m_Layer: 0
   m_Name: foret 4
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24867,7 +25104,7 @@ GameObject:
   - component: {fileID: 1223805653}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25933,7 +26170,6 @@ GameObject:
   - component: {fileID: 1287755419}
   - component: {fileID: 1287755418}
   - component: {fileID: 1287755416}
-  - component: {fileID: 1287755417}
   m_Layer: 8
   m_Name: Hex19
   m_TagString: Ground
@@ -25984,27 +26220,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   centerObject: {fileID: 1795950685}
---- !u!65 &1287755417
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1287755414}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.73205, y: 8.11, z: 2}
-  m_Center: {x: 0, y: 0.099999994, z: 0}
 --- !u!64 &1287755418
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26047,7 +26262,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b28fe12659b8cef41a139fbfe4cdc169, type: 2}
+  - {fileID: 2100000, guid: 95fec37151ee8e140bce7da14dd9c977, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26369,7 +26584,7 @@ GameObject:
   - component: {fileID: 1315726960}
   m_Layer: 0
   m_Name: foret 5
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26593,7 +26808,7 @@ GameObject:
   - component: {fileID: 1326825547}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26817,6 +27032,7 @@ GameObject:
   - component: {fileID: 1334260079}
   - component: {fileID: 1334260078}
   - component: {fileID: 1334260077}
+  - component: {fileID: 1334260080}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -26833,7 +27049,7 @@ Transform:
   m_GameObject: {fileID: 1334260075}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26854,6 +27070,13 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 632883486}
   centreObject: {fileID: 265136834}
+  trees:
+  - {fileID: 1104489637}
+  - {fileID: 1818271093}
+  - {fileID: 702611298}
+  - {fileID: 384749741}
+  - {fileID: 1989233035}
+  - {fileID: 1815636505}
   doors:
   - {fileID: 1104489637}
   - {fileID: 1818271093}
@@ -26905,10 +27128,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &1334260080
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334260075}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1337761310
 GameObject:
   m_ObjectHideFlags: 0
@@ -27089,7 +27333,7 @@ GameObject:
   - component: {fileID: 1361560622}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27481,7 +27725,7 @@ GameObject:
   - component: {fileID: 1374823758}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28786,7 +29030,7 @@ GameObject:
   - component: {fileID: 1440001973}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29783,7 +30027,7 @@ GameObject:
   - component: {fileID: 1492822536}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31458,6 +31702,7 @@ GameObject:
   - component: {fileID: 1553509834}
   - component: {fileID: 1553509833}
   - component: {fileID: 1553509832}
+  - component: {fileID: 1553509835}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -31474,7 +31719,7 @@ Transform:
   m_GameObject: {fileID: 1553509830}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -31495,6 +31740,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1917313935}
   centreObject: {fileID: 755110209}
+  trees: []
   doors:
   - {fileID: 1440001971}
   - {fileID: 1674656251}
@@ -31544,10 +31790,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &1553509835
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553509830}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1555863212
 GameObject:
   m_ObjectHideFlags: 0
@@ -32086,6 +32353,7 @@ GameObject:
   - component: {fileID: 1563421166}
   - component: {fileID: 1563421165}
   - component: {fileID: 1563421164}
+  - component: {fileID: 1563421167}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -32102,7 +32370,7 @@ Transform:
   m_GameObject: {fileID: 1563421162}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32123,6 +32391,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1940412235}
   centreObject: {fileID: 613858585}
+  trees: []
   doors:
   - {fileID: 656293817}
   - {fileID: 833554808}
@@ -32172,10 +32441,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &1563421167
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563421162}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1569326789
 GameObject:
   m_ObjectHideFlags: 0
@@ -32359,7 +32649,7 @@ GameObject:
   - component: {fileID: 1592210642}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33311,7 +33601,7 @@ GameObject:
   - component: {fileID: 1672909029}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33367,6 +33657,7 @@ GameObject:
   - component: {fileID: 1673917717}
   - component: {fileID: 1673917716}
   - component: {fileID: 1673917715}
+  - component: {fileID: 1673917718}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -33383,7 +33674,7 @@ Transform:
   m_GameObject: {fileID: 1673917713}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.4930311, z: -0, w: 0.8700117}
-  m_LocalPosition: {x: -0.36727372, y: 0.51, z: -0.6053553}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33404,6 +33695,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 39429880}
   centreObject: {fileID: 1244163258}
+  trees: []
   doors:
   - {fileID: 1492822534}
   - {fileID: 1522791243}
@@ -33453,10 +33745,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.5698969, y: 3.9029582, z: 1.1188134}
   m_Center: {x: 0.7131656, y: 1.4514791, z: -0.059410255}
+--- !u!135 &1673917718
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673917713}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1674079487
 GameObject:
   m_ObjectHideFlags: 0
@@ -33550,9 +33863,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1674119204}
-  - component: {fileID: 1674119203}
   - component: {fileID: 1674119202}
   - component: {fileID: 1674119205}
+  - component: {fileID: 1674119206}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -33587,27 +33900,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1674119203
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1674119200}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.5698969, y: 3.9029582, z: 1.1188134}
-  m_Center: {x: 0.7131656, y: 1.4514791, z: -0.059410255}
 --- !u!4 &1674119204
 Transform:
   m_ObjectHideFlags: 0
@@ -33617,7 +33909,7 @@ Transform:
   m_GameObject: {fileID: 1674119200}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.4930311, z: -0, w: 0.8700117}
-  m_LocalPosition: {x: -0.36727372, y: 0.51, z: -0.6053553}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33638,11 +33930,37 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1463796153}
   centreObject: {fileID: 1225509525}
+  trees:
+  - {fileID: 1105130847}
+  - {fileID: 1842774810}
+  - {fileID: 1483657824}
+  - {fileID: 2062698615}
   doors:
   - {fileID: 2062367843}
   - {fileID: 1081227145}
   - {fileID: 601297336}
   - {fileID: 1644934188}
+--- !u!135 &1674119206
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674119200}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5514411
+  m_Center: {x: -0.051441193, y: 0, z: -4.709092e-10}
 --- !u!1 &1674656251
 GameObject:
   m_ObjectHideFlags: 0
@@ -33879,7 +34197,7 @@ GameObject:
   - component: {fileID: 1684093537}
   m_Layer: 0
   m_Name: foret 5
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34831,6 +35149,7 @@ GameObject:
   - component: {fileID: 1723812483}
   - component: {fileID: 1723812482}
   - component: {fileID: 1723812481}
+  - component: {fileID: 1723812484}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -34847,7 +35166,7 @@ Transform:
   m_GameObject: {fileID: 1723812479}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34868,6 +35187,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 2044104123}
   centreObject: {fileID: 1834803601}
+  trees: []
   doors:
   - {fileID: 14570960}
   - {fileID: 482291917}
@@ -34916,10 +35236,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &1723812484
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723812479}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1735901013
 GameObject:
   m_ObjectHideFlags: 0
@@ -35016,7 +35357,7 @@ GameObject:
   - component: {fileID: 1738769795}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35576,6 +35917,7 @@ GameObject:
   - component: {fileID: 1757445670}
   - component: {fileID: 1757445669}
   - component: {fileID: 1757445668}
+  - component: {fileID: 1757445671}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -35592,7 +35934,7 @@ Transform:
   m_GameObject: {fileID: 1757445666}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35613,6 +35955,13 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1287755416}
   centreObject: {fileID: 1795950685}
+  trees:
+  - {fileID: 70417725}
+  - {fileID: 2030579508}
+  - {fileID: 1326825545}
+  - {fileID: 1517152995}
+  - {fileID: 1525622989}
+  - {fileID: 1715706538}
   doors:
   - {fileID: 70417725}
   - {fileID: 2030579508}
@@ -35664,10 +36013,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &1757445671
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757445666}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1758920396
 GameObject:
   m_ObjectHideFlags: 0
@@ -36047,7 +36417,7 @@ GameObject:
   - component: {fileID: 1778687269}
   m_Layer: 0
   m_Name: foret 4
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36358,7 +36728,7 @@ GameObject:
   - component: {fileID: 1817947140}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38400,7 +38770,7 @@ GameObject:
   - component: {fileID: 1895570910}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41826,7 +42196,7 @@ GameObject:
   - component: {fileID: 2043266643}
   m_Layer: 0
   m_Name: foret 4
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42655,7 +43025,7 @@ GameObject:
   - component: {fileID: 2062367845}
   m_Layer: 0
   m_Name: foret 3
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42851,6 +43221,7 @@ GameObject:
   - component: {fileID: 2070547983}
   - component: {fileID: 2070547982}
   - component: {fileID: 2070547981}
+  - component: {fileID: 2070547984}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -42867,7 +43238,7 @@ Transform:
   m_GameObject: {fileID: 2070547979}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42888,6 +43259,10 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 714957145}
   centreObject: {fileID: 558988553}
+  trees:
+  - {fileID: 1965176990}
+  - {fileID: 2012210372}
+  - {fileID: 1958775685}
   doors:
   - {fileID: 1965176990}
   - {fileID: 2012210372}
@@ -42936,10 +43311,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &2070547984
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070547979}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5433111
+  m_Center: {x: -3.3001168e-10, y: 0, z: -0.043311022}
 --- !u!1 &2076412874
 GameObject:
   m_ObjectHideFlags: 0
@@ -43456,6 +43852,7 @@ GameObject:
   - component: {fileID: 2091920049}
   - component: {fileID: 2091920048}
   - component: {fileID: 2091920047}
+  - component: {fileID: 2091920050}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -43472,7 +43869,7 @@ Transform:
   m_GameObject: {fileID: 2091920045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.04449116, z: 0, w: 0.9990098}
-  m_LocalPosition: {x: -0.748, y: 0.51, z: -0.091}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43493,6 +43890,7 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1926034760}
   centreObject: {fileID: 1537057727}
+  trees: []
   doors:
   - {fileID: 2104778475}
   - {fileID: 1425591802}
@@ -43542,10 +43940,31 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4379476, y: 3.9029582, z: 1.348662}
   m_Center: {x: 0.6471886, y: 1.4514791, z: 0.17432831}
+--- !u!135 &2091920050
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091920045}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5873131
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2100001610
 GameObject:
   m_ObjectHideFlags: 0
@@ -43698,7 +44117,7 @@ GameObject:
   - component: {fileID: 2104778477}
   m_Layer: 0
   m_Name: foret 1
-  m_TagString: Door
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -6,18 +6,18 @@ public class GestionSalle : MonoBehaviour
     public EnemySpawner enemySpawner;
     private bool enemiesSpawned = false;
     public GameObject centreObject;
-    //public GameObject[] trees;
-    public GameObject[] doors; // Référence aux portes de cet hexagone
+    public GameObject[] trees;
+    public GameObject[] doors;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !enemiesSpawned)
         {
-        /*foreach (GameObject tree in trees)
+        foreach (GameObject tree in trees)
         {
             tree.SetActive(true);
         }
-  */
+  
             Vector3 centrePosition = centreObject.transform.position;
 
             Vector3 newPos = new Vector3(centrePosition.x, centrePosition.y + 21f, centrePosition.z);
@@ -38,10 +38,9 @@ void Update()
     {
         if (enemiesSpawned && GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
-            // Détruire les portes de cet hexagone
             foreach (GameObject door in doors)
             {
-                Destroy(door);
+                door.SetActive(false);
             }
         }
     }
