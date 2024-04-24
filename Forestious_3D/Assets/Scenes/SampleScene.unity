@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 68cf39667f9087b40803d4b9ea524202, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.36159, g: 0.38503644, b: 0.42313573, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -341,7 +341,11 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 999872887}
   centreObject: {fileID: 1914100084}
-  trees: []
+  trees:
+  - {fileID: 2121133185}
+  - {fileID: 676853234}
+  - {fileID: 2043266641}
+  - {fileID: 262067817}
   doors:
   - {fileID: 2121133185}
   - {fileID: 676853234}
@@ -8543,7 +8547,11 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 2115847726}
   centreObject: {fileID: 1993167647}
-  trees: []
+  trees:
+  - {fileID: 311114545}
+  - {fileID: 1842774810}
+  - {fileID: 1483657824}
+  - {fileID: 2062698615}
   doors:
   - {fileID: 311114545}
   - {fileID: 1842774810}
@@ -10028,7 +10036,10 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1955811609}
   centreObject: {fileID: 1982158076}
-  trees: []
+  trees:
+  - {fileID: 1361560620}
+  - {fileID: 2047562829}
+  - {fileID: 1893590048}
   doors:
   - {fileID: 1361560620}
   - {fileID: 2047562829}
@@ -13483,7 +13494,10 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 694111058}
   centreObject: {fileID: 2021192154}
-  trees: []
+  trees:
+  - {fileID: 1080241668}
+  - {fileID: 736383031}
+  - {fileID: 140808426}
   doors:
   - {fileID: 1080241668}
   - {fileID: 736383031}
@@ -26262,7 +26276,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 95fec37151ee8e140bce7da14dd9c977, type: 2}
+  - {fileID: 2100000, guid: b28fe12659b8cef41a139fbfe4cdc169, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31740,7 +31754,11 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1917313935}
   centreObject: {fileID: 755110209}
-  trees: []
+  trees:
+  - {fileID: 1440001971}
+  - {fileID: 1674656251}
+  - {fileID: 1640361710}
+  - {fileID: 590642529}
   doors:
   - {fileID: 1440001971}
   - {fileID: 1674656251}
@@ -32391,7 +32409,11 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1940412235}
   centreObject: {fileID: 613858585}
-  trees: []
+  trees:
+  - {fileID: 656293817}
+  - {fileID: 833554808}
+  - {fileID: 1672909027}
+  - {fileID: 1778687267}
   doors:
   - {fileID: 656293817}
   - {fileID: 833554808}
@@ -33695,7 +33717,11 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 39429880}
   centreObject: {fileID: 1244163258}
-  trees: []
+  trees:
+  - {fileID: 1492822534}
+  - {fileID: 1522791243}
+  - {fileID: 1153044523}
+  - {fileID: 440182981}
   doors:
   - {fileID: 1492822534}
   - {fileID: 1522791243}
@@ -35187,7 +35213,10 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 2044104123}
   centreObject: {fileID: 1834803601}
-  trees: []
+  trees:
+  - {fileID: 14570960}
+  - {fileID: 482291917}
+  - {fileID: 1895570908}
   doors:
   - {fileID: 14570960}
   - {fileID: 482291917}
@@ -43890,7 +43919,11 @@ MonoBehaviour:
   mainCamera: {fileID: 1139403255}
   enemySpawner: {fileID: 1926034760}
   centreObject: {fileID: 1537057727}
-  trees: []
+  trees:
+  - {fileID: 2104778475}
+  - {fileID: 1425591802}
+  - {fileID: 1310805335}
+  - {fileID: 1489823153}
   doors:
   - {fileID: 2104778475}
   - {fileID: 1425591802}
