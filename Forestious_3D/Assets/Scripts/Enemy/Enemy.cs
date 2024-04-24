@@ -50,12 +50,12 @@ public class Enemy : MonoBehaviour
 
 private void OnTriggerEnter(Collider other)
 {
-    if (other.CompareTag("Player")) // Vérifie si le joueur entre en collision avec l'ennemi
+    if (other.CompareTag("Player"))
     {
         CharacterStats playerStats = other.GetComponent<CharacterStats>();
-        if (playerStats != null) // Correction de la comparaison
+        if (playerStats != null)
         {
-            playerStats.TakeDamage(damageAmount); // Inflige des dégâts au joueur
+            playerStats.TakeDamage(damageAmount);
         }
     }
 }

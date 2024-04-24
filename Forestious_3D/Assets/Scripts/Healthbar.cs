@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // Ajoutez cette ligne pour importer le namespace UnityEngine.UI
+using UnityEngine.UI;
 
 public class Healthbar : MonoBehaviour
 {
@@ -13,7 +13,6 @@ public class Healthbar : MonoBehaviour
     {
         cam = Camera.main;
     }
-    // Start is called before the first frame update
     public void updateHealthBar(float maxHealth, float health)
     {
         target = health / maxHealth;
