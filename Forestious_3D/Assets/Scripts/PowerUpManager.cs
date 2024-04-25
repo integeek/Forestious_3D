@@ -6,23 +6,27 @@ public class PowerUpManager : MonoBehaviour
     public WeaponStats weaponStats;
     public float bonusSpeed = 5f;
     public float bonusDamage = 5f;
-    public float bonusHealth = 1f;
+    public float bonusHealth = 15f;
 
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Assurez-vous que le joueur a le tag "Player"
+        if (other.CompareTag("Player"))
         {
-            if (gameObject.CompareTag("SpeedUp")) // Si le power-up a le tag "SpeedUp"
+            if (gameObject.CompareTag("SpeedUp"))
             {
-                characterStats.moveSpeed += bonusSpeed; // Ajoute le bonus de vitesse au joueur
+                characterStats.moveSpeed += bonusSpeed;
             }
-            else if (gameObject.CompareTag("DamageUp")) // Si le power-up a le tag "DamageUp"
+            else if (gameObject.CompareTag("DamageUp"))
             {
-                weaponStats.damage += bonusDamage; // Augmente les dégâts de l'arme du joueur
+                weaponStats.damage += bonusDamage;
+            }
+            else if (gameObject.CompareTag("HealthUp"))
+            {
+                characterStats.Heal(bonusHealth);
             }
 
-            Destroy(gameObject); // Détruit le power-up une fois qu'il a été récupéré par le joueur
+            Destroy(gameObject);
         }
     }
 }

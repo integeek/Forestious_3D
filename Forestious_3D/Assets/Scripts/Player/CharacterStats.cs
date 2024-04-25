@@ -4,14 +4,15 @@ public class CharacterStats : MonoBehaviour
 {
     public float rotationSpeed = 25;
     public float moveSpeed = 7.5f;
-    [SerializeField] float health, maxHealth = 30f;
-    [SerializeField] private Healthbar _healthbar;
+    [SerializeField] public float health, maxHealth = 30f;
+    [SerializeField] public Healthbar _healthbar;
 
     void Start()
     {
        health = maxHealth;
        _healthbar.updateHealthBar(maxHealth, health);
     }
+
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
@@ -21,5 +22,12 @@ public class CharacterStats : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void Heal(float amount)
+    {
+        health += amount;
+        health = Mathf.Min(health, maxHealth);
+        _healthbar.updateHealthBar(maxHealth, health);
     }
 }
