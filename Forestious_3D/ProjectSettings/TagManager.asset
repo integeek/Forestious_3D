@@ -12,6 +12,7 @@ TagManager:
   - PDS
   - PDA
   - Artifact
+  - RangeUp
   layers:
   - Default
   - TransparentFX

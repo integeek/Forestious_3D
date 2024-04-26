@@ -8,6 +8,7 @@ public class GestionSalle : MonoBehaviour
     public GameObject centreObject;
     public GameObject[] trees;
     public GameObject[] doors;
+    public GameObject[] powerUps;
 
     void OnTriggerEnter(Collider other)
     {
@@ -43,6 +44,10 @@ public class GestionSalle : MonoBehaviour
             foreach (GameObject door in doors)
             {
                 door.SetActive(false);
+            }
+            foreach (GameObject powerUp in powerUps)
+            {
+                powerUp.SetActive(true);
             }
         }
     }
