@@ -9,9 +9,9 @@ TagManager:
   - HealthUp
   - Enemy
   - Ground
-  - Door
   - PDS
   - PDA
+  - Artifact
   layers:
   - Default
   - TransparentFX

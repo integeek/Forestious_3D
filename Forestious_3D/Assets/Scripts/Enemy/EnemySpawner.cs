@@ -9,10 +9,6 @@ public class EnemySpawner : MonoBehaviour
     public LayerMask groundLayer;
     public GameObject centerObject;
 
-    void Start()
-    {
-    }
-
     public void SpawnEnemies()
     {
         int numEnemies = Random.Range(minEnemies, maxEnemies + 1);

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GestionHex1 : MonoBehaviour
 {
     public Camera mainCamera;
+
     public GameObject centreObject;
 
     void OnTriggerEnter(Collider other)

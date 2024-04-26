@@ -14,12 +14,6 @@ public class Enemy : MonoBehaviour
        activeEnemies++;
     }
 
-    private void OnDestroy()
-    {
-        activeEnemies--;
-        CheckEnemiesRemaining();
-    }
-
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
@@ -28,23 +22,6 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
-        }
-    }
-
-    private void CheckEnemiesRemaining()
-    {
-        if (activeEnemies <= 0)
-        {
-            DestroyDoor();
-        }
-    }
-
-    private void DestroyDoor()
-    {
-        GameObject door = GameObject.FindGameObjectWithTag("Door");
-        if (door != null)
-        {
-            Destroy(door);
         }
     }
 
