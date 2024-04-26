@@ -351,8 +351,6 @@ MonoBehaviour:
   - {fileID: 676853234}
   - {fileID: 2043266641}
   - {fileID: 262067817}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &12618402
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3308,8 +3306,6 @@ MonoBehaviour:
   - {fileID: 317682129}
   - {fileID: 378922273}
   - {fileID: 843793889}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &144394401
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7572,8 +7568,6 @@ MonoBehaviour:
   - {fileID: 1437650075}
   - {fileID: 51929406}
   - {fileID: 2102420598}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &364963626
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8130,8 +8124,6 @@ MonoBehaviour:
   - {fileID: 1112413928}
   - {fileID: 1684093535}
   - {fileID: 922665105}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &385605418
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8635,7 +8627,7 @@ GameObject:
   - component: {fileID: 428714038}
   - component: {fileID: 428714041}
   - component: {fileID: 428714040}
-  - component: {fileID: 428714039}
+  - component: {fileID: 428714042}
   m_Layer: 0
   m_Name: piedestal artifact
   m_TagString: Untagged
@@ -8662,24 +8654,6 @@ Transform:
   - {fileID: 183702455}
   m_Father: {fileID: 1287755415}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &428714039
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428714037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32cb12049fac10d47b52e627b0853726, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pedestalSword: {fileID: 428714037}
-  pedestalAxe: {fileID: 862066735}
-  axe: {fileID: 901820163}
-  sword: {fileID: 1740906270179604324}
-  door: {fileID: 1057059016}
-  hexagone1: {fileID: 8742036350447986573}
 --- !u!54 &428714040
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8728,6 +8702,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.9749053, y: 4.6686616, z: 2.5260615}
   m_Center: {x: -1.7492199, y: 1.8343306, z: 0.7630262}
+--- !u!114 &428714042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428714037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99755ef818ddee74fa484dda8b8dd0ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArtifactPlayer: {fileID: 1115853344}
 --- !u!1 &428998745
 GameObject:
   m_ObjectHideFlags: 0
@@ -8788,8 +8775,6 @@ MonoBehaviour:
   - {fileID: 1842774810}
   - {fileID: 1483657824}
   - {fileID: 2062698615}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &428998748
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9534,8 +9519,6 @@ MonoBehaviour:
   - {fileID: 1555863212}
   - {fileID: 463029061}
   - {fileID: 1548189435}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &471733401
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10279,8 +10262,6 @@ MonoBehaviour:
   - {fileID: 1361560620}
   - {fileID: 2047562829}
   - {fileID: 1893590048}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &499532699
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13856,8 +13837,6 @@ MonoBehaviour:
   - {fileID: 1080241668}
   - {fileID: 736383031}
   - {fileID: 140808426}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &670739361
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15745,8 +15724,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 714075507}
-  - component: {fileID: 714075509}
   - component: {fileID: 714075508}
+  - component: {fileID: 714075511}
   - component: {fileID: 714075510}
   m_Layer: 8
   m_Name: Trigger point
@@ -15764,7 +15743,7 @@ Transform:
   m_GameObject: {fileID: 714075506}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.823, y: 0.51, z: 0}
+  m_LocalPosition: {x: 0, y: 0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15797,8 +15776,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &714075509
-BoxCollider:
+--- !u!114 &714075510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714075506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1160b187ef79d49b53c00e263a67ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraDepart: {fileID: 963194225}
+  camera1: {fileID: 1139403253}
+--- !u!135 &714075511
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -15816,23 +15809,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.23391953, y: 3.9029582, z: 1}
-  m_Center: {x: 0.045175552, y: 1.4514791, z: 0}
---- !u!114 &714075510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714075506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db1160b187ef79d49b53c00e263a67ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraDepart: {fileID: 963194225}
-  camera1: {fileID: 1139403253}
-  enemySpawner: {fileID: 8742036350447986574}
+  m_Radius: 0.71
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &714957143
 GameObject:
   m_ObjectHideFlags: 0
@@ -17681,8 +17659,6 @@ MonoBehaviour:
   - {fileID: 1948559533}
   - {fileID: 1879629841}
   - {fileID: 158381972}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &795117364
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24186,7 +24162,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1115853345
 Transform:
   m_ObjectHideFlags: 0
@@ -24196,7 +24172,7 @@ Transform:
   m_GameObject: {fileID: 1115853344}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46, y: 0, z: 0.3}
+  m_LocalPosition: {x: 0.28, y: 0, z: 0.3}
   m_LocalScale: {x: 0.57573, y: 0.57573, z: 0.57573}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27730,8 +27706,6 @@ MonoBehaviour:
   - {fileID: 384749741}
   - {fileID: 1989233035}
   - {fileID: 1815636505}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &1334260078
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32265,7 +32239,8 @@ GameObject:
   - component: {fileID: 1539842448}
   - component: {fileID: 1539842451}
   - component: {fileID: 1539842450}
-  - component: {fileID: 1539842449}
+  - component: {fileID: 1539842452}
+  - component: {fileID: 1539842453}
   m_Layer: 8
   m_Name: Trigger point
   m_TagString: Untagged
@@ -32282,26 +32257,12 @@ Transform:
   m_GameObject: {fileID: 1539842447}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.4930311, z: -0, w: 0.8700117}
-  m_LocalPosition: {x: -0.3080001, y: 0.51, z: -0.44664475}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5319794461967051848}
   m_LocalEulerAnglesHint: {x: 0, y: -59.08, z: 0}
---- !u!114 &1539842449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539842447}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b159dd7aa6809b347b39f94b3aec0e86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1139403255}
-  centreObject: {fileID: 1569326789}
 --- !u!54 &1539842450
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32346,10 +32307,49 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1.4266226, y: 3.9029582, z: 1.0115639}
   m_Center: {x: 0.64153, y: 1.4514791, z: -0.1577098}
+--- !u!135 &1539842452
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539842447}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1539842453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539842447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b159dd7aa6809b347b39f94b3aec0e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1139403255}
+  cameraD: {fileID: 963194227}
+  enemySpawner: {fileID: 8742036350447986574}
+  centreObject: {fileID: 1569326789}
+  trees: []
+  doors: []
 --- !u!1 &1543471544
 GameObject:
   m_ObjectHideFlags: 0
@@ -32550,8 +32550,6 @@ MonoBehaviour:
   - {fileID: 1674656251}
   - {fileID: 1640361710}
   - {fileID: 590642529}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &1553509833
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33207,8 +33205,6 @@ MonoBehaviour:
   - {fileID: 833554808}
   - {fileID: 1672909027}
   - {fileID: 1778687267}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &1563421165
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34517,8 +34513,6 @@ MonoBehaviour:
   - {fileID: 1522791243}
   - {fileID: 1153044523}
   - {fileID: 440182981}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &1673917716
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -34758,8 +34752,6 @@ MonoBehaviour:
   - {fileID: 1081227145}
   - {fileID: 601297336}
   - {fileID: 1644934188}
-  rockPrefab: {fileID: 8470609324796075270, guid: 2dfa9bcdd4e3b0441b65ef70b7b1420a, type: 3}
-  flowerPotPrefab: {fileID: 2113591024103038329, guid: b64f3b13e87498249aa2d504b6932f7e, type: 3}
 --- !u!135 &1674119206
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36015,8 +36007,6 @@ MonoBehaviour:
   - {fileID: 14570960}
   - {fileID: 482291917}
   - {fileID: 1895570908}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &1723812482
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -36794,8 +36784,6 @@ MonoBehaviour:
   - {fileID: 1517152995}
   - {fileID: 1525622989}
   - {fileID: 1715706538}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &1757445669
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -37213,7 +37201,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1008906604}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 438369150845411970}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -44094,8 +44082,6 @@ MonoBehaviour:
   - {fileID: 1965176990}
   - {fileID: 2012210372}
   - {fileID: 1958775685}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &2070547982
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44729,8 +44715,6 @@ MonoBehaviour:
   - {fileID: 1425591802}
   - {fileID: 1310805335}
   - {fileID: 1489823153}
-  rockPrefab: {fileID: 0}
-  flowerPotPrefab: {fileID: 0}
 --- !u!54 &2091920048
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46343,7 +46327,8 @@ Transform:
   m_LocalPosition: {x: -22.11, y: 0.9063034, z: -0.72}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1775963140}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: -155.3, z: 0}
 --- !u!4 &543450652556079768
@@ -47426,8 +47411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133d835506ac5d246a8fcdf8c2b889d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canva: {fileID: 1775963136}
-  d_template: {fileID: 1008906603}
+  canvas: {fileID: 1775963136}
+  dialogueTemplate: {fileID: 1008906603}
 --- !u!54 &3583385355546422570
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49014,6 +48999,5 @@ SceneRoots:
   - {fileID: 1050716515}
   - {fileID: 431924857}
   - {fileID: 38840203}
-  - {fileID: 1775963140}
   - {fileID: 371936349}
   - {fileID: 438369150845411970}
