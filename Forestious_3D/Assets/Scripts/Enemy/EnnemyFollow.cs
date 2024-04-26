@@ -6,12 +6,10 @@ public class EnemyFollow : MonoBehaviour
 
     void Update()
     {
-        // Recherchez dynamiquement l'objet avec le tag "Player"
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
         if (player != null)
         {
-            // Déplacez l'ennemi vers la position du joueur
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         }
         else

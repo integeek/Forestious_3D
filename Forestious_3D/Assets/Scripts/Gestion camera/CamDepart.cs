@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class CamDepart : MonoBehaviour
-{
+{/*
     public Camera cameraDepart;
     public Camera cameraGame;
 
@@ -12,5 +12,5 @@ public class CamDepart : MonoBehaviour
             cameraDepart.enabled = true;
             cameraGame.enabled = false;
         }
-    }
+    }*/
 }
