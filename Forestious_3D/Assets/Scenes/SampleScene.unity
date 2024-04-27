@@ -190,8 +190,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterStats: {fileID: 487908999}
-  weaponStats: {fileID: 0}
-  bonusSpeed: 15
+  weaponStats: {fileID: 8868247973188606741}
+  bonusSpeed: 5
   bonusDamage: 5
   bonusHealth: 1
 --- !u!65 &365213007
