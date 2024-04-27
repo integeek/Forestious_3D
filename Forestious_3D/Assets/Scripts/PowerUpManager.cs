@@ -4,7 +4,8 @@ public class PowerUpManager : MonoBehaviour
 {
     public CharacterStats characterStats;
     public WeaponStats weaponStats;
-    public GameObject weapon;
+    public AxeStats axeStats;
+    public GameObject[] weapons;
     public float bonusSpeed = 5f;
     public float bonusDamage = 5f;
     public float bonusHealth = 15f;
@@ -22,6 +23,7 @@ public class PowerUpManager : MonoBehaviour
             else if (gameObject.CompareTag("DamageUp"))
             {
                 weaponStats.damage += bonusDamage;
+                axeStats.damage += bonusDamage;
             }
             else if (gameObject.CompareTag("HealthUp"))
             {
@@ -29,9 +31,12 @@ public class PowerUpManager : MonoBehaviour
             }
             else if (gameObject.CompareTag("RangeUp"))
             {
+                foreach (GameObject weapon in weapons)
+                {
                 Vector3 currentScale = weapon.transform.localScale;
                 currentScale.z += bonusRange;
                 weapon.transform.localScale = currentScale;
+                }
             }
 
 

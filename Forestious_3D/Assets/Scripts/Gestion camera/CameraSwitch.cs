@@ -7,8 +7,8 @@ public class CameraSwitch : MonoBehaviour
     public EnemySpawner enemySpawner;
     public GameObject[] trees;
     public GameObject[] doors;
-
-    private bool enemiesSpawned = false; // Indique si les ennemis ont déjà été spawnés
+    public GameObject[] powerUps;
+    private bool enemiesSpawned = false;
 
 void OnTriggerEnter(Collider other)
     {
@@ -21,17 +21,14 @@ void OnTriggerEnter(Collider other)
             cameraDepart.SetActive(false);
             camera1.SetActive(true);
             enemySpawner.SpawnEnemies();
-            enemiesSpawned = true; // Marque que les ennemis ont été spawnés
+            enemiesSpawned = true;
 
-            // Vous pouvez ajouter d'autres actions pour le changement de caméra ici
         }
         else if (other.CompareTag("Player") && enemiesSpawned)
         {
-            // Actions à effectuer lorsque le joueur rentre dans le trigger après que les ennemis ont été spawnés
             cameraDepart.SetActive(false);
             camera1.SetActive(true);
 
-            // Vous pouvez ajouter d'autres actions pour le changement de caméra ici
         }
     }
         void Update()
@@ -41,6 +38,10 @@ void OnTriggerEnter(Collider other)
             foreach (GameObject door in doors)
             {
                 door.SetActive(false);
+            }
+            foreach (GameObject powerUp in powerUps)
+            {
+                powerUp.SetActive(true);
             }
         }
     }
