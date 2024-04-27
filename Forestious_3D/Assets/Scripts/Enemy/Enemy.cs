@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Healthbar _healthbar;
     private static int activeEnemies = 0;
     public float damageAmount = 10f;
+    public AudioSource audioSource;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+            audioSource.Play();
             Destroy(gameObject);
         }
     }
