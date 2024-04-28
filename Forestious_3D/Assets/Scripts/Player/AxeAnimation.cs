@@ -2,23 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwordSwingScript : MonoBehaviour
+public class AxeAnimation : MonoBehaviour
 {
-
     public GameObject Sword;
 
     void Update()
     {
         if(Input.GetMouseButtonDown(0))
         {
-            StartCoroutine(SwordSwing());
+            StartCoroutine(SwingAxeAnimation());
         }
     }
 
-    IEnumerator SwordSwing()
+    IEnumerator SwingAxeAnimation()
     {
-        Sword.GetComponent<Animator>().Play("SwordSwing");
+        Sword.GetComponent<Animator>().Play("AxeAnimation");
         yield return new WaitForSeconds(1.0f);
         Sword.GetComponent<Animator>().Play("New State");
     }
-} 
+}

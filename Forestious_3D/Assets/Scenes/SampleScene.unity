@@ -15995,7 +15995,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2a59c4ce9b0cfee4196a9d85358c7065, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.374
+  m_Volume: 0.244
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -27694,16 +27694,15 @@ GameObject:
   - component: {fileID: 901820165}
   - component: {fileID: 901820169}
   - component: {fileID: 901820168}
-  - component: {fileID: 901820170}
-  - component: {fileID: 901820171}
   - component: {fileID: 901820172}
+  - component: {fileID: 901820173}
   m_Layer: 0
   m_Name: axe  (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &901820164
 Transform:
   m_ObjectHideFlags: 0
@@ -27836,42 +27835,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!95 &901820170
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901820163}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 87aa8c4b954a9e747add90891363cf73, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!111 &901820171
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901820163}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 60663a0f737ad834994e985a8122854b, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &901820172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27885,6 +27848,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sword: {fileID: 901820163}
+--- !u!95 &901820173
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901820163}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f3d24a59a245ed745af4780f34f02e56, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &908715930
 GameObject:
   m_ObjectHideFlags: 0
@@ -38880,9 +38864,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e2529e494cddb044b950385fcd40730, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 923374301086733131, guid: 4b5a64dabbe903c42a8ce6d80fdb9dd1, type: 3}
-  minEnemies: 2
-  maxEnemies: 4
+  enemyPrefab: {fileID: 7339799551251051446, guid: fe81c0c4a5a0ba844b9ec533530c6edf, type: 3}
+  minEnemies: 1
+  maxEnemies: 1
   spawnRadius: 5
   groundLayer:
     serializedVersion: 2
@@ -67104,7 +67088,6 @@ MonoBehaviour:
   maxHealth: 20
   _healthbar: {fileID: 72213225658282800}
   damageAmount: 10
-  audioSource: {fileID: 0}
 --- !u!4 &438369150845411970
 Transform:
   m_ObjectHideFlags: 0
@@ -69583,7 +69566,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857780675466575426}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d137c81ba4326b4a8898c38a6f5f947, type: 3}
   m_Name: 
