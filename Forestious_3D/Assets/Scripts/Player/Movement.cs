@@ -29,6 +29,12 @@ public class Movement : MonoBehaviour
             // Calculate the rotation to look at the movement direction
             Quaternion targetRotation = Quaternion.LookRotation(move);
 
+            // Rotate the target rotation by 270 degrees around the x-axis
+            targetRotation *= Quaternion.Euler(270f, 0f, 0f);
+
+            // Rotate the target rotation by 90 degrees around the z-axis
+            targetRotation *= Quaternion.Euler(0f, 0f, 90f);
+
             // Smoothly rotate towards the target rotation
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * characterStats.rotationSpeed);
         }

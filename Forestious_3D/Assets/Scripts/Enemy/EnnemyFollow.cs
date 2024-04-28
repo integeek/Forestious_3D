@@ -10,8 +10,15 @@ public class EnemyFollow : MonoBehaviour
 
         if (player != null)
         {
+
+
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            //Quaternion targetRotation = Quaternion.Euler(90f, -90f, transform.rotation.eulerAngles.z);
+
+            //transform.rotation = targetRotation;
             //transform.LookAt(player.transform);
+
+            
         }
         else
         {
