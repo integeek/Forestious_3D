@@ -320,7 +320,7 @@ MonoBehaviour:
   maxHealth: 22.5
   _healthbar: {fileID: 5369757207131273577}
   damageAmount: 11
-  audioSource: {fileID: 0}
+  soundClip: {fileID: 0}
 --- !u!54 &694659382073984379
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0bad0ee831014145a61a811a3061226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 2.5
 --- !u!1 &7499788268077108688
 GameObject:
   m_ObjectHideFlags: 0
