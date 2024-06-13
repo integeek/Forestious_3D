@@ -6,12 +6,20 @@ public class Enemy : MonoBehaviour
     [SerializeField] private Healthbar _healthbar;
     private static int activeEnemies = 0;
     public float damageAmount = 10f;
+    private AudioSource audioSource;
+    public AudioClip soundClip;
 
     void Start()
     {
-       health = maxHealth;
-       _healthbar.updateHealthBar(maxHealth, health);
-       activeEnemies++;
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.maxDistance = 500f;
+        if (soundClip != null)
+        {
+            audioSource.clip = soundClip;
+        }
+        health = maxHealth;
+        _healthbar.updateHealthBar(maxHealth, health);
+        activeEnemies++;
     }
 
     public void TakeDamage(float damageAmount)
@@ -21,6 +29,7 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+            audioSource.Play();
             Destroy(gameObject);
         }
     }

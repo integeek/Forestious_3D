@@ -16,8 +16,9 @@ public class EnemySpawner : MonoBehaviour
         for (int i = 0; i < numEnemies; i++)
         {
             Vector3 spawnPosition = GenerateSpawnPosition();
-
-            Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+            Quaternion spawnRotation = Quaternion.Euler(-90f, 0f, 0f);
+ 
+            Instantiate(enemyPrefab, spawnPosition, spawnRotation);
         }
     }
 
@@ -26,7 +27,7 @@ public class EnemySpawner : MonoBehaviour
         Vector3 centerPosition = centerObject.transform.position;
 
         Vector2 randomPoint = Random.insideUnitCircle * spawnRadius;
-        Vector3 spawnPosition = new Vector3(randomPoint.x, 1.755f, randomPoint.y) + centerPosition;
+        Vector3 spawnPosition = new Vector3(randomPoint.x, 5f, randomPoint.y) + centerPosition;
 
         RaycastHit hit;
         if (Physics.Raycast(spawnPosition, Vector3.down, out hit, Mathf.Infinity, groundLayer))
